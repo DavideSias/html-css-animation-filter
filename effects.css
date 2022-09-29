@@ -1,0 +1,215 @@
+.ex-1-square{
+    transition: all 3s;
+}
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-2-square{
+    transition: all 3s;
+}
+.ex-2-square:active{
+    width: 100%;
+}
+
+.ex-3-square{
+    transition: all 2s;
+}
+
+.ex-3-square:hover{
+    border-radius: 100px;
+}
+
+.ex-4-square{
+    transition: all 3s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+.ex-5-square{
+    transition: all 2s;
+}
+
+.ex-5-square:hover{
+    transform: scale(2);
+}
+
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-7-img{
+    transition: all 3s;
+}
+
+.ex-7-img:hover{
+    filter: grayscale(50%) sepia(50%);
+}
+
+.ex-8-img{
+    transition: all 2s;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(50%) sepia(50%);
+    border-radius: 20px;
+}
+
+.ex-9-img {
+    transition: all 2s;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(50%) sepia(50%);
+    border-radius: 30px;
+    transform: scale(1.5);
+}
+
+.ex-10-icon{
+    animation: 1s infinite linear rotazione;
+}
+
+@keyframes rotazione{
+   from {
+    transform: rotate(0);
+   }
+
+   to {
+    transform: rotate(-360deg);
+   }
+}
+
+.ex-11-icon:hover{
+    animation: 2s linear semi-rotazione;
+}
+@keyframes semi-rotazione {
+    0% {
+        transform: rotate(0);
+    }
+    80% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: 2s linear moving-top;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: 2s linear moving-bottom;
+}
+
+@keyframes moving-top {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    50% {
+        top: -10px;
+        left: 70%;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%; 
+    }
+}
+
+@keyframes moving-bottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    50% {
+        bottom: -10px;
+        right: 70%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%; 
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: 3s linear moving-top13;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: 3s linear moving-bottom13;
+}
+
+@keyframes moving-top13{
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    20% {
+        top: -10px;
+        left: 71%;
+    }
+
+    40% {
+        top: 48px;
+        left: 80%;
+    }
+
+    60% {
+        top: 48px;
+        left: -10%
+    }
+
+    80% {
+        top: -10px;
+        left: -20%;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes moving-bottom13{
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    20% {
+        bottom: -10px;
+        right: 71%;
+    }
+
+    40% {
+        bottom: 48px;
+        right: 80%;
+    }
+
+    60% {
+        bottom: 48px;
+        right: -10%
+    }
+
+    80% {
+        bottom: -10px;
+        right: -20%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
